@@ -62,7 +62,7 @@ function topScorers(){
  addStudent("Sadhana", "85");
  addStudent("Keerthana", "64");
  addStudent("Praveena", "47");
- addStudent("Archana", 89)
+ addStudent("Archana", 32)
 
  // Display all student
 
@@ -82,3 +82,6 @@ function topScorers(){
 
  console.log("\n Any Failures?")
  console.log(findFailures() ? "Yes some students failed": "No Failures")
+
+
+ //In terminal, run node student-score.js
