@@ -83,5 +83,15 @@ function employeeDatas() {
   addEmployee(3, "Charan", "Sales", 57000)
 
  //view employees
+  console.log("\n")
+  employeeDatas();
 
-  getEmployeeDetails();
+  // get employee details with ID
+  console.log("\n")
+  console.log(getEmployeeDetails(2))
+
+  // update employee details with ID
+
+  console.log("\n")
+  console.log(updateEmployeeDetails(1, {salary: 73000}))
+  employeeDatas();
