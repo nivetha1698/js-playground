@@ -37,3 +37,42 @@ function employeeDatas() {
     }
     return `Employee with ID ${id} is not found`;
  }
+
+ //Function to update datas
+
+ function updateEmployeeDetails(id, updateDetails){
+   if (employeeDB[id]) {
+     Object.assign(employeeDB[id], updateDetails)
+   }
+   else {
+    console.log(`Employee with ID ${id} is not found`);
+   }
+ }
+
+ //function to freeze employee data (we cannot delete or change data)
+
+  function freezeEmployee(id){
+    if (employeeDB[id]) {
+     Object.freeze(employeeDB[id])
+     console.log("Employee Data Freezed")
+    }
+    else {
+     console.log(`Employee with ID ${id} is not found`);
+    }
+
+  }
+
+  //function to seal employee data (we cannot delete but change data)
+
+  function sealEmployee(id){
+    if (employeeDB[id]) {
+     Object.seal(employeeDB[id])
+     console.log("Employee Data Sealed")
+    }
+    else {
+     console.log(`Employee with ID ${id} is not found`);
+    }
+
+  }
+
+
