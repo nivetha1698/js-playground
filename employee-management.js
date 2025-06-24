@@ -95,3 +95,21 @@ function employeeDatas() {
   console.log("\n")
   console.log(updateEmployeeDetails(1, {salary: 73000}))
   employeeDatas();
+
+  // freeze employee data
+  employeeDatas();
+  console.log("\n")
+  console.log("Freezing Employee Data")
+  freezeEmployee(1);
+  // try to modify frozen data
+  employeeDB[1].salary = 40000 // this doesn't work
+  employeeDatas();
+
+  //seal employee data
+   console.log("\n")
+   console.log("Sealing Employee Data")
+   sealEmployee(1);
+   employeeDB[1].salary = 80000
+   console.log("After Seal")
+   console.log(getEmployeeDetails(1))
+
