@@ -31,9 +31,9 @@ function employeeDatas() {
 
 //Function to get employee details (Object.entries)
 
- function getEmployeeDetails(){
+ function getEmployeeDetails(id){
     if (employeeDB[id]) {
-        return Object.entries(employeeDB[id])
+        return Object.entries(employeeDB[id]);
     }
     return `Employee with ID ${id} is not found`;
  }
@@ -76,3 +76,12 @@ function employeeDatas() {
   }
 
 
+  //usage
+
+  addEmployee(1, "Arun", "Engineering", 68000)
+  addEmployee(2, "Bhavana", "Marketing", 80000)
+  addEmployee(3, "Charan", "Sales", 57000)
+
+ //view employees
+
+  getEmployeeDetails();
