@@ -84,4 +84,4 @@ function topScorers(){
  console.log(findFailures() ? "Yes some students failed": "No Failures")
 
 
- //In terminal, run node student-score.js
+ //In terminal, run "node student-score.js"
