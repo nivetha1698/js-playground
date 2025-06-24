@@ -110,6 +110,7 @@ function employeeDatas() {
    console.log("Sealing Employee Data")
    sealEmployee(1);
    employeeDB[1].salary = 80000
+   employeeDB[1].age = 27 // this property doesn't get added because this object is sealed so we cannot add new property
    console.log("After Seal")
    console.log(getEmployeeDetails(1))
 
