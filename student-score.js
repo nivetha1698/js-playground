@@ -60,8 +60,8 @@ function topScorers(){
 
  addStudent("Nive", "90");
  addStudent("Sadhana", "85");
- addStudent("Keerthana", "64");
- addStudent("Praveena", "47");
+ addStudent("Keerthana", 64);
+ addStudent("Praveena", 47);
  addStudent("Archana", 32)
 
  // Display all student
