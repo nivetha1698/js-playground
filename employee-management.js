@@ -62,7 +62,7 @@ function employeeDatas() {
 
   }
 
-  //function to seal employee data (we cannot delete but change data)
+  //function to seal employee data (we cannot delete or add but we can change data)
 
   function sealEmployee(id){
     if (employeeDB[id]) {
